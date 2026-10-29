@@ -49,8 +49,9 @@
 .equ TEXT_ROWS,          60
 
 // Ritmo del juego: vueltas de Delay por cuadro.
-// Ajustar segun la plataforma (CPUlator es mas lento que la tarjeta).
-.equ FRAME_DELAY,        300000
+// 550000 da unos 4 cuadros por segundo en CPUlator. En la DE1-SoC real
+// el procesador es mucho mas rapido: hay que subir este valor.
+.equ FRAME_DELAY,        550000
 
 // Perifericos
 .equ PIXBUF,             0xC8000000     // Memoria de video VGA
